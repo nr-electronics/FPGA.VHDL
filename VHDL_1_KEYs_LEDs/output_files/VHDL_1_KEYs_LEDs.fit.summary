@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Jan 05 15:36:41 2021
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : VHDL_1_KEYs_LEDs
+Top-level Entity Name : VHDL_1_KEYs_LEDs
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 3 / 240 ( 1 % )
+Total pins : 10 / 80 ( 13 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
