@@ -1,0 +1,53 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do VHDL_1_KEYs_LEDs_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/KEYsLEDs.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:43:23 on Jan 19,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/KEYsLEDs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KEYsLEDs
+# -- Compiling architecture RTL of KEYsLEDs
+# End time: 21:43:23 on Jan 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -2008 -work work {C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/simulation/modelsim/KEYsLED_tst.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:43:23 on Jan 19,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/simulation/modelsim/KEYsLED_tst.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity KEYsLEDs_vhd_tst
+# -- Compiling architecture KEYsLEDs_arch of KEYsLEDs_vhd_tst
+# End time: 21:43:23 on Jan 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs="+acc"  KEYsLEDs_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" KEYsLEDs_vhd_tst 
+# Start time: 21:43:23 on Jan 19,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.keysleds_vhd_tst(keysleds_arch)
+# Loading work.keysleds(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 21:48:34 on Jan 19,2021, Elapsed time: 0:05:11
+# Errors: 0, Warnings: 0
