@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VHDL_1_KEYs_LEDs
-Tue Jan 19 21:33:05 2021
+Tue Jan 19 22:40:52 2021
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue Jan 19 21:33:05 2021       ;
+; Analysis & Synthesis Status ; Successful - Tue Jan 19 22:40:52 2021       ;
 ; Quartus Prime Version       ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name               ; VHDL_1_KEYs_LEDs                            ;
 ; Top-level Entity Name       ; KEYsLEDs                                    ;
@@ -62,8 +62,6 @@ agreement for further details.
 ; Top-level entity name                                                      ; KEYsLEDs           ; VHDL_1_KEYs_LEDs   ;
 ; Family name                                                                ; MAX II             ; Cyclone V          ;
 ; Maximum processors allowed for parallel compilation                        ; All                ;                    ;
-; VHDL Show LMF Mapping Messages                                             ; Off                ;                    ;
-; VHDL Version                                                               ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -72,6 +70,7 @@ agreement for further details.
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
 ; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
 ; Safe State Machine                                                         ; Off                ; Off                ;
 ; Extract Verilog State Machines                                             ; On                 ; On                 ;
@@ -142,13 +141,13 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                 ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; KEYsLEDs.vhd                     ; yes             ; User VHDL File  ; C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/KEYsLEDs.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+; KEYsLEDs.vhd                     ; yes             ; User VHDL File  ; D:/github/FPGA.VHDL/VHDL_1_KEYs_LEDs/Lesson#2.LVHDL_1_KEYs_LEDs_TestBench/KEYsLEDs.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------+
@@ -216,13 +215,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Jan 19 21:32:57 2021
+    Info: Processing started: Tue Jan 19 22:40:44 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VHDL_1_KEYs_LEDs -c VHDL_1_KEYs_LEDs
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file keysleds.vhd
-    Info (12022): Found design unit 1: KEYsLEDs-RTL File: C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/KEYsLEDs.vhd Line: 11
-    Info (12023): Found entity 1: KEYsLEDs File: C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/KEYsLEDs.vhd Line: 4
-Warning (12019): Can't analyze file -- file simulation/modelsim/KEYsLEDs_tst.vhd is missing
+    Info (12022): Found design unit 1: KEYsLEDs-RTL File: D:/github/FPGA.VHDL/VHDL_1_KEYs_LEDs/Lesson#2.LVHDL_1_KEYs_LEDs_TestBench/KEYsLEDs.vhd Line: 11
+    Info (12023): Found entity 1: KEYsLEDs File: D:/github/FPGA.VHDL/VHDL_1_KEYs_LEDs/Lesson#2.LVHDL_1_KEYs_LEDs_TestBench/KEYsLEDs.vhd Line: 4
 Info (12127): Elaborating entity "KEYsLEDs" for the top level hierarchy
 Info (21057): Implemented 13 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
@@ -232,10 +230,10 @@ Warning (20013): Ignored 3 assignments for entity "max2" -- entity does not exis
     Warning (20014): Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity max2 -section_id "Root Region" was ignored
     Warning (20014): Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity max2 -section_id "Root Region" was ignored
     Warning (20014): Assignment for entity set_global_assignment -name LL_ROUTING_REGION OFF -entity max2 -section_id "Root Region" was ignored
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4762 megabytes
-    Info: Processing ended: Tue Jan 19 21:33:05 2021
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4756 megabytes
+    Info: Processing ended: Tue Jan 19 22:40:52 2021
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:16
 
 

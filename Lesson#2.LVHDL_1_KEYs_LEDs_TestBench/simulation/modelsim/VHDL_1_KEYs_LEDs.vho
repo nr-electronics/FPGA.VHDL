@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
 
--- DATE "01/19/2021 21:33:12"
+-- DATE "01/05/2021 15:36:45"
 
 -- 
 -- Device: Altera EPM240T100C5 Package TQFP100
@@ -32,17 +32,17 @@ LIBRARY MAXII;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE MAXII.MAXII_COMPONENTS.ALL;
 
-ENTITY 	KEYsLEDs IS
+ENTITY 	VHDL_1_KEYs_LEDs IS
     PORT (
-	key : IN std_logic_vector(1 DOWNTO 0);
-	led : BUFFER std_logic_vector(7 DOWNTO 0)
+	KEY : IN std_logic_vector(1 DOWNTO 0);
+	LED : BUFFER std_logic_vector(7 DOWNTO 0)
 	);
-END KEYsLEDs;
+END VHDL_1_KEYs_LEDs;
 
 -- Design Ports Information
 
 
-ARCHITECTURE structure OF KEYsLEDs IS
+ARCHITECTURE structure OF VHDL_1_KEYs_LEDs IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';
@@ -52,52 +52,52 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
-SIGNAL ww_key : std_logic_vector(1 DOWNTO 0);
-SIGNAL ww_led : std_logic_vector(7 DOWNTO 0);
-SIGNAL \led~0_combout\ : std_logic;
-SIGNAL \led~1_combout\ : std_logic;
-SIGNAL \led~2_combout\ : std_logic;
-SIGNAL \key~combout\ : std_logic_vector(1 DOWNTO 0);
-SIGNAL \ALT_INV_led~1_combout\ : std_logic;
-SIGNAL \ALT_INV_key~combout\ : std_logic_vector(1 DOWNTO 0);
+SIGNAL ww_KEY : std_logic_vector(1 DOWNTO 0);
+SIGNAL ww_LED : std_logic_vector(7 DOWNTO 0);
+SIGNAL \LED~0_combout\ : std_logic;
+SIGNAL \LED~1_combout\ : std_logic;
+SIGNAL \LED~2_combout\ : std_logic;
+SIGNAL \KEY~combout\ : std_logic_vector(1 DOWNTO 0);
+SIGNAL \ALT_INV_LED~1_combout\ : std_logic;
+SIGNAL \ALT_INV_KEY~combout\ : std_logic_vector(1 DOWNTO 0);
 
 BEGIN
 
-ww_key <= key;
-led <= ww_led;
+ww_KEY <= KEY;
+LED <= ww_LED;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\ALT_INV_led~1_combout\ <= NOT \led~1_combout\;
-\ALT_INV_key~combout\(1) <= NOT \key~combout\(1);
-\ALT_INV_key~combout\(0) <= NOT \key~combout\(0);
+\ALT_INV_LED~1_combout\ <= NOT \LED~1_combout\;
+\ALT_INV_KEY~combout\(1) <= NOT \KEY~combout\(1);
+\ALT_INV_KEY~combout\(0) <= NOT \KEY~combout\(0);
 
 -- Location: PIN_18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\key[0]~I\ : maxii_io
+\KEY[0]~I\ : maxii_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "input")
 -- pragma translate_on
 PORT MAP (
 	oe => GND,
-	padio => ww_key(0),
-	combout => \key~combout\(0));
+	padio => ww_KEY(0),
+	combout => \KEY~combout\(0));
 
 -- Location: PIN_17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\key[1]~I\ : maxii_io
+\KEY[1]~I\ : maxii_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "input")
 -- pragma translate_on
 PORT MAP (
 	oe => GND,
-	padio => ww_key(1),
-	combout => \key~combout\(1));
+	padio => ww_KEY(1),
+	combout => \KEY~combout\(1));
 
 -- Location: LC_X7_Y3_N9
-\led~0\ : maxii_lcell
+\LED~0\ : maxii_lcell
 -- Equation(s):
--- \led~0_combout\ = ((\key~combout\(0) $ (\key~combout\(1))))
+-- \LED~0_combout\ = ((\KEY~combout\(0) $ (\KEY~combout\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -109,16 +109,16 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \key~combout\(0),
-	datad => \key~combout\(1),
+	datac => \KEY~combout\(0),
+	datad => \KEY~combout\(1),
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	combout => \led~0_combout\);
+	combout => \LED~0_combout\);
 
 -- Location: LC_X4_Y2_N4
-\led~1\ : maxii_lcell
+\LED~1\ : maxii_lcell
 -- Equation(s):
--- \led~1_combout\ = ((\key~combout\(0)) # ((\key~combout\(1))))
+-- \LED~1_combout\ = ((\KEY~combout\(0)) # ((\KEY~combout\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -130,16 +130,16 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \key~combout\(0),
-	datad => \key~combout\(1),
+	datab => \KEY~combout\(0),
+	datad => \KEY~combout\(1),
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	combout => \led~1_combout\);
+	combout => \LED~1_combout\);
 
 -- Location: LC_X4_Y2_N6
-\led~2\ : maxii_lcell
+\LED~2\ : maxii_lcell
 -- Equation(s):
--- \led~2_combout\ = (((!\key~combout\(1))) # (!\key~combout\(0)))
+-- \LED~2_combout\ = (((!\KEY~combout\(1))) # (!\KEY~combout\(0)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -151,99 +151,99 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \key~combout\(0),
-	datad => \key~combout\(1),
+	datab => \KEY~combout\(0),
+	datad => \KEY~combout\(1),
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	combout => \led~2_combout\);
+	combout => \LED~2_combout\);
 
 -- Location: PIN_73,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-\led[0]~I\ : maxii_io
+\LED[0]~I\ : maxii_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "output")
 -- pragma translate_on
 PORT MAP (
-	datain => \ALT_INV_key~combout\(0),
+	datain => \ALT_INV_KEY~combout\(0),
 	oe => VCC,
-	padio => ww_led(0));
+	padio => ww_LED(0));
 
 -- Location: PIN_71,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-\led[1]~I\ : maxii_io
+\LED[1]~I\ : maxii_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "output")
 -- pragma translate_on
 PORT MAP (
-	datain => \ALT_INV_key~combout\(1),
+	datain => \ALT_INV_KEY~combout\(1),
 	oe => VCC,
-	padio => ww_led(1));
+	padio => ww_LED(1));
 
 -- Location: PIN_69,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-\led[2]~I\ : maxii_io
+\LED[2]~I\ : maxii_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "output")
 -- pragma translate_on
 PORT MAP (
-	datain => \ALT_INV_key~combout\(0),
+	datain => \ALT_INV_KEY~combout\(0),
 	oe => VCC,
-	padio => ww_led(2));
+	padio => ww_LED(2));
 
 -- Location: PIN_68,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-\led[3]~I\ : maxii_io
+\LED[3]~I\ : maxii_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "output")
 -- pragma translate_on
 PORT MAP (
-	datain => \ALT_INV_key~combout\(1),
+	datain => \ALT_INV_KEY~combout\(1),
 	oe => VCC,
-	padio => ww_led(3));
+	padio => ww_LED(3));
 
 -- Location: PIN_67,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-\led[4]~I\ : maxii_io
+\LED[4]~I\ : maxii_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "output")
 -- pragma translate_on
 PORT MAP (
-	datain => \ALT_INV_key~combout\(0),
+	datain => \ALT_INV_KEY~combout\(0),
 	oe => VCC,
-	padio => ww_led(4));
+	padio => ww_LED(4));
 
 -- Location: PIN_66,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-\led[5]~I\ : maxii_io
+\LED[5]~I\ : maxii_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "output")
 -- pragma translate_on
 PORT MAP (
-	datain => \led~0_combout\,
+	datain => \LED~0_combout\,
 	oe => VCC,
-	padio => ww_led(5));
+	padio => ww_LED(5));
 
 -- Location: PIN_64,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-\led[6]~I\ : maxii_io
+\LED[6]~I\ : maxii_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "output")
 -- pragma translate_on
 PORT MAP (
-	datain => \ALT_INV_led~1_combout\,
+	datain => \ALT_INV_LED~1_combout\,
 	oe => VCC,
-	padio => ww_led(6));
+	padio => ww_LED(6));
 
 -- Location: PIN_62,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-\led[7]~I\ : maxii_io
+\LED[7]~I\ : maxii_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "output")
 -- pragma translate_on
 PORT MAP (
-	datain => \led~2_combout\,
+	datain => \LED~2_combout\,
 	oe => VCC,
-	padio => ww_led(7));
+	padio => ww_LED(7));
 END structure;
 
 

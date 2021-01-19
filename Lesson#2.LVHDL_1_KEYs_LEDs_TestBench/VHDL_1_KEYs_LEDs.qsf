@@ -136,26 +136,12 @@ set_location_assignment PIN_56 -to f[56]
 set_location_assignment PIN_57 -to f[57]
 set_location_assignment PIN_58 -to f[58]
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
-set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS OFF
-set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
 set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Test_1 -section_id eda_simulation
-set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
-set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
-set_global_assignment -name PROJECT_IP_REGENERATION_POLICY ALWAYS_REGENERATE_IP
-set_global_assignment -name VHDL_FILE KEYsLEDs.vhd
-set_global_assignment -name VHDL_TEST_BENCH_FILE simulation/modelsim/KEYsLEDs_test.vht
-set_global_assignment -name VHDL_FILE simulation/modelsim/KEYsLEDs_tst.vhd
-set_global_assignment -name AUTO_RESTART_CONFIGURATION OFF
-set_global_assignment -name ENABLE_OCT_DONE OFF
-set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
-set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
-set_global_assignment -name USE_CONFIGURATION_DEVICE ON
-set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
-set_global_assignment -name DEVICE_MIGRATION_LIST EPM240T100C5
-set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
-set_global_assignment -name VHDL_FILE simulation/modelsim/KEYsLED_tst.vhd
 set_global_assignment -name EDA_TEST_BENCH_NAME Test_1 -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Test_1
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME KEYsLEDs_vhd_tst -section_id Test_1
 set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/KEYsLED_tst.vhd -section_id Test_1
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS OFF
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name VHDL_FILE KEYsLEDs.vhd

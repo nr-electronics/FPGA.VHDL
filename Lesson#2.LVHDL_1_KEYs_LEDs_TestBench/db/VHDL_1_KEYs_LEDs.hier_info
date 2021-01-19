@@ -10,13 +10,13 @@ key[1] => led.IN1
 key[1] => led.IN1
 key[1] => led.IN1
 key[1] => led[3].DATAIN
-led[0] << key[0].DB_MAX_OUTPUT_PORT_TYPE
-led[1] << key[1].DB_MAX_OUTPUT_PORT_TYPE
-led[2] << key[0].DB_MAX_OUTPUT_PORT_TYPE
-led[3] << key[1].DB_MAX_OUTPUT_PORT_TYPE
-led[4] << key[0].DB_MAX_OUTPUT_PORT_TYPE
-led[5] << led.DB_MAX_OUTPUT_PORT_TYPE
-led[6] << led.DB_MAX_OUTPUT_PORT_TYPE
-led[7] << led.DB_MAX_OUTPUT_PORT_TYPE
+led[0] <= key[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= key[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= key[0].DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= key[1].DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= key[0].DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= led.DB_MAX_OUTPUT_PORT_TYPE
 
 

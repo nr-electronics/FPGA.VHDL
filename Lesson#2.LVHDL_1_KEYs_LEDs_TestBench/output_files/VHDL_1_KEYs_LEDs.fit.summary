@@ -1,7 +1,7 @@
-Fitter Status : Successful - Tue Jan 19 21:33:08 2021
+Fitter Status : Successful - Tue Jan 05 15:36:41 2021
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : VHDL_1_KEYs_LEDs
-Top-level Entity Name : KEYsLEDs
+Top-level Entity Name : VHDL_1_KEYs_LEDs
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final

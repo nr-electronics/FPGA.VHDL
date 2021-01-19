@@ -1,5 +1,5 @@
 EDA Netlist Writer report for VHDL_1_KEYs_LEDs
-Tue Jan 19 21:36:08 2021
+Tue Jan 05 15:36:45 2021
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -8,7 +8,9 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 ---------------------
   1. Legal Notice
   2. EDA Netlist Writer Summary
-  3. EDA Netlist Writer Messages
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
 
 
 
@@ -35,11 +37,44 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Jan 19 21:36:08 2021 ;
+; EDA Netlist Writer Status ; Successful - Tue Jan 05 15:36:45 2021 ;
 ; Revision Name             ; VHDL_1_KEYs_LEDs                      ;
-; Top-level Entity Name     ; KEYsLEDs                              ;
+; Top-level Entity Name     ; VHDL_1_KEYs_LEDs                      ;
 ; Family                    ; MAX II                                ;
+; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                        ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Option                                                                                            ; Setting                ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
+; Generate functional simulation netlist                                                            ; Off                    ;
+; Time scale                                                                                        ; 1 ps                   ;
+; Truncate long hierarchy paths                                                                     ; Off                    ;
+; Map illegal HDL characters                                                                        ; Off                    ;
+; Flatten buses into individual nodes                                                               ; Off                    ;
+; Maintain hierarchy                                                                                ; Off                    ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
+; Enable glitch filtering                                                                           ; Off                    ;
+; Do not write top level VHDL entity                                                                ; Off                    ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
+; Architecture name in VHDL output netlist                                                          ; structure              ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                    ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                    ;
++---------------------------------------------------------------------------------------------------+------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                            ;
++---------------------------------------------------------------------------------------+
+; Generated Files                                                                       ;
++---------------------------------------------------------------------------------------+
+; C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/simulation/modelsim/VHDL_1_KEYs_LEDs.vho     ;
+; C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/simulation/modelsim/VHDL_1_KEYs_LEDs_vhd.sdo ;
++---------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -48,16 +83,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Jan 19 21:36:08 2021
-Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off VHDL_1_KEYs_LEDs -c VHDL_1_KEYs_LEDs --gen_testbench
-Warning (20013): Ignored 3 assignments for entity "max2" -- entity does not exist in design
-    Warning (20014): Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity max2 -section_id "Root Region" was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity max2 -section_id "Root Region" was ignored
-    Warning (20014): Assignment for entity set_global_assignment -name LL_ROUTING_REGION OFF -entity max2 -section_id "Root Region" was ignored
-Info (201002): Generated VHDL Test Bench File C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/simulation/modelsim/KEYsLEDs.vht for simulation
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4607 megabytes
-    Info: Processing ended: Tue Jan 19 21:36:08 2021
+    Info: Processing started: Tue Jan 05 15:36:45 2021
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off VHDL_1_KEYs_LEDs -c VHDL_1_KEYs_LEDs
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204018): Generated files "VHDL_1_KEYs_LEDs.vho" and "VHDL_1_KEYs_LEDs_vhd.sdo" in directory "C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/simulation/modelsim/" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4611 megabytes
+    Info: Processing ended: Tue Jan 05 15:36:45 2021
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
