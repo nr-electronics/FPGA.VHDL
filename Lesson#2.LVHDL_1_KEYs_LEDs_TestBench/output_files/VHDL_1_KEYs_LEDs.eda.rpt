@@ -1,0 +1,64 @@
+EDA Netlist Writer report for VHDL_1_KEYs_LEDs
+Tue Jan 19 21:36:08 2021
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Tue Jan 19 21:36:08 2021 ;
+; Revision Name             ; VHDL_1_KEYs_LEDs                      ;
+; Top-level Entity Name     ; KEYsLEDs                              ;
+; Family                    ; MAX II                                ;
++---------------------------+---------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Jan 19 21:36:08 2021
+Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off VHDL_1_KEYs_LEDs -c VHDL_1_KEYs_LEDs --gen_testbench
+Warning (20013): Ignored 3 assignments for entity "max2" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity max2 -section_id "Root Region" was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity max2 -section_id "Root Region" was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name LL_ROUTING_REGION OFF -entity max2 -section_id "Root Region" was ignored
+Info (201002): Generated VHDL Test Bench File C:/Users/nr.new/Desktop/VHDL_1_KEYs_LEDs/simulation/modelsim/KEYsLEDs.vht for simulation
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4607 megabytes
+    Info: Processing ended: Tue Jan 19 21:36:08 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

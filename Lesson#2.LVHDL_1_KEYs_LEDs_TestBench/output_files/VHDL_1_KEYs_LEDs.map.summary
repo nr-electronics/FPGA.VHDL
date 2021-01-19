@@ -1,0 +1,9 @@
+Analysis & Synthesis Status : Successful - Tue Jan 19 21:33:05 2021
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : VHDL_1_KEYs_LEDs
+Top-level Entity Name : KEYsLEDs
+Family : MAX II
+Total logic elements : 3
+Total pins : 10
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
