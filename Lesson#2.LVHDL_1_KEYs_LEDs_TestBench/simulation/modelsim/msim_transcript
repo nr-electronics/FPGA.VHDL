@@ -12,31 +12,31 @@
 # 
 # vcom -93 -work work {D:/github/FPGA.VHDL/VHDL_1_KEYs_LEDs/Lesson#2.LVHDL_1_KEYs_LEDs_TestBench/KEYsLEDs.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:41:00 on Jan 19,2021
+# Start time: 22:42:48 on Jan 19,2021
 # vcom -reportprogress 300 -93 -work work D:/github/FPGA.VHDL/VHDL_1_KEYs_LEDs/Lesson#2.LVHDL_1_KEYs_LEDs_TestBench/KEYsLEDs.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity KEYsLEDs
 # -- Compiling architecture RTL of KEYsLEDs
-# End time: 22:41:00 on Jan 19,2021, Elapsed time: 0:00:00
+# End time: 22:42:48 on Jan 19,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {D:/github/FPGA.VHDL/VHDL_1_KEYs_LEDs/Lesson#2.LVHDL_1_KEYs_LEDs_TestBench/simulation/modelsim/KEYsLED_tst.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:41:00 on Jan 19,2021
+# Start time: 22:42:48 on Jan 19,2021
 # vcom -reportprogress 300 -93 -work work D:/github/FPGA.VHDL/VHDL_1_KEYs_LEDs/Lesson#2.LVHDL_1_KEYs_LEDs_TestBench/simulation/modelsim/KEYsLED_tst.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity KEYsLEDs_vhd_tst
 # -- Compiling architecture KEYsLEDs_arch of KEYsLEDs_vhd_tst
-# End time: 22:41:00 on Jan 19,2021, Elapsed time: 0:00:00
+# End time: 22:42:48 on Jan 19,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs="+acc"  KEYsLEDs_vhd_tst
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxii -L rtl_work -L work -voptargs=""+acc"" KEYsLEDs_vhd_tst 
-# Start time: 22:41:00 on Jan 19,2021
+# Start time: 22:42:48 on Jan 19,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -49,5 +49,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 22:41:09 on Jan 19,2021, Elapsed time: 0:00:09
+# End time: 22:42:56 on Jan 19,2021, Elapsed time: 0:00:08
 # Errors: 0, Warnings: 0
